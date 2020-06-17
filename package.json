@@ -1,14 +1,29 @@
 {
   "name": "vue-click-outside-hook",
   "version": "1.0.0",
-  "description": "",
+  "description": "a hook function triggered when clicking outside the component, used like lifecycle hooks",
   "main": "index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "index.js",
+    "dist"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "vue-next",
+    "click-outside",
+    "event hook",
+    "onClickOutside"
+  ],
+  "author": "liuycy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuycy/vue-click-outside-hook/issues"
+  },
+  "homepage": "https://github.com/liuycy/vue-click-outside-hook/tree/master#readme",
   "dependencies": {
     "vue": "^3.0.0-beta.15"
   },

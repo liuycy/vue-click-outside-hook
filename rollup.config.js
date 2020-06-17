@@ -21,24 +21,6 @@ export default [
     external: ['vue'],
 
     output: {
-      file: 'dist/index.esm.prod.js',
-      format: 'esm',
-    },
-
-    plugins: [
-      typescript(),
-      terser({
-        ecma: 2015,
-      }),
-    ],
-  },
-
-  {
-    input: 'src/index.ts',
-
-    external: ['vue'],
-
-    output: {
       file: 'dist/index.cjs.js',
       format: 'cjs',
     },
@@ -56,6 +38,11 @@ export default [
       format: 'cjs',
     },
 
-    plugins: [typescript(), terser()],
+    plugins: [
+      typescript(),
+      terser({
+        ecma: 2015,
+      }),
+    ],
   },
 ];
