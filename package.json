@@ -18,12 +18,13 @@
     "event hook",
     "onClickOutside"
   ],
-  "author": "liuycy",
+  "author": "liuycy <nijjba@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/liuycy/vue-click-outside-hook/issues"
   },
   "homepage": "https://github.com/liuycy/vue-click-outside-hook/tree/master#readme",
+  "repository": "liuycy/vue-click-outside-hook",
   "dependencies": {
     "vue": "^3.0.0-beta.15"
   },
