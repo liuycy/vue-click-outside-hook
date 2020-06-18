@@ -24,14 +24,36 @@
     "url": "https://github.com/liuycy/vue-click-outside-hook/issues"
   },
   "homepage": "https://github.com/liuycy/vue-click-outside-hook/tree/master#readme",
-  "repository": "liuycy/vue-click-outside-hook",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuycy/vue-click-outside-hook.git"
+  },
   "dependencies": {
     "vue": "^3.0.0-beta.15"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.3.0",
+    "@typescript-eslint/parser": "^3.3.0",
+    "eslint": "^7.2.0",
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "rollup": "^2.16.1",
     "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.27.1",
     "typescript": "^3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "eslint --fix"
+    ]
   }
 }
