@@ -1,6 +1,6 @@
 {
   "name": "vue-click-outside-hook",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a hook function triggered when clicking outside the component, used like lifecycle hooks",
   "main": "index.js",
   "module": "dist/index.esm.js",
