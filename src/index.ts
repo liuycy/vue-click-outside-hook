@@ -34,13 +34,12 @@ export default function onClickOutside(
     }
 
     onMounted(() => {
-        if (!target?.subTree.children) return;
-        window.addEventListener('click', handleEvent);
-        window.addEventListener('touchend', handleEvent);
+        document.addEventListener('click', handleEvent);
+        document.addEventListener('touchend', handleEvent);
     });
 
     onUnmounted(() => {
-        window.removeEventListener('click', handleEvent);
-        window.removeEventListener('touchend', handleEvent);
+        document.removeEventListener('click', handleEvent);
+        document.removeEventListener('touchend', handleEvent);
     });
 }
